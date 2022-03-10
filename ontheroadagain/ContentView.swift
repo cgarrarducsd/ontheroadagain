@@ -16,15 +16,18 @@ struct ContentView: View {
                 .resizable()
                 .aspectRatio (contentMode: .fit)
                 .padding()
-            
             Text("On The Road Again!")
-                .padding()
+            .padding()
+             Spacer()
+            
             List() {
             //add our aditonal views here
-            NavigationLink(destination: Welcome())
+            NavigationLink(destination: Startinglocation())
             {Text("Get Started")}
-            
-            Spacer()
+            NavigationLink(destination: Login())
+            {Text("Login")}
+                
+                
             }
         }
         }
