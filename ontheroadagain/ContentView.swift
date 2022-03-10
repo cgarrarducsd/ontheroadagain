@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView() {
+        VStack {
+            
+            Image("Car")
+                .resizable()
+                .aspectRatio (contentMode: .fit)
+                .padding()
+            
+            Text("On The Road Again!")
+                .padding()
+            List() {
+            //add our aditonal views here
+            NavigationLink(destination: Welcome())
+            {Text("Welcome")}
+            
+            Spacer()
+            }
+        }
+        }
     }
 }
 
