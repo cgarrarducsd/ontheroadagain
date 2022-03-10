@@ -15,11 +15,11 @@ struct ContentView: View {
             Image("Car")
                 .resizable()
                 .aspectRatio (contentMode: .fit)
-                .padding()
+
             Text("On The Road Again!")
             .padding()
              Spacer()
-            
+        
             List() {
             //add our aditonal views here
             NavigationLink(destination: Startinglocation())
@@ -27,9 +27,10 @@ struct ContentView: View {
             NavigationLink(destination: Login())
             {Text("Login")}
                 
-                
+            
             }
         }
+        .navigationBarHidden(true)
         }
     }
 }
