@@ -22,7 +22,7 @@ struct ContentView: View {
             List() {
             //add our aditonal views here
             NavigationLink(destination: Welcome())
-            {Text("Welcome")}
+            {Text("Get Started")}
             
             Spacer()
             }
