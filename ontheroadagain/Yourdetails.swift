@@ -16,6 +16,19 @@ struct Yourdetails: View {
                 .padding()
             Spacer()
             
+            TextField("First Name", text:.constant ("First Name"))
+                .padding()
+                .font(.title)
+                .overlay((RoundedRectangle (cornerRadius: 20).stroke(Color.red, lineWidth: 2)))
+            TextField("Last Name", text:.constant ("Last Name"))
+                .padding()
+                .font(.title)
+                .overlay((RoundedRectangle (cornerRadius: 20).stroke(Color.red, lineWidth: 2)))
+            TextField("email", text:.constant ("Email"))
+                .padding()
+                .font(.title)
+                .overlay((RoundedRectangle (cornerRadius: 20).stroke(Color.red, lineWidth: 2)))
+         
             //bottom row buttons
             HStack(alignment: .center, spacing: -20.0) {
             Image("Backarrow")
