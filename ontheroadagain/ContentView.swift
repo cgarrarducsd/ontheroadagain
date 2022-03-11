@@ -26,7 +26,7 @@ struct ContentView: View {
             List() {
             //add our aditonal views here
             NavigationLink(destination: Startinglocation())
-            {Text("Does this work?")}
+            {Text("Getting Started")}
             NavigationLink(destination: Login())
             {Text("Login")}
                 
