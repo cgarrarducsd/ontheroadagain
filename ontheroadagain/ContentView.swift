@@ -15,9 +15,12 @@ struct ContentView: View {
             Image("Car")
                 .resizable()
                 .aspectRatio (contentMode: .fit)
+                .padding()
 
             Text("On The Road Again!")
-            .padding()
+                .font(.title)
+                .multilineTextAlignment(.center)
+                .padding()
              Spacer()
         
             List() {
@@ -27,7 +30,13 @@ struct ContentView: View {
             NavigationLink(destination: Login())
             {Text("Login")}
                 
-            
+            }
+            //bottom row buttons
+            HStack(alignment: .center, spacing: -20.0) {
+            Image("Backarrow")
+            Image("Homebutton")
+            Image("Forwardarrow")
+
             }
         }
         .navigationBarHidden(true)

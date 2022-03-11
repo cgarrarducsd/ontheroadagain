@@ -13,9 +13,12 @@ struct Login: View {
             Image("Car")
                 .resizable()
                 .aspectRatio (contentMode: .fit)
+                .padding()
             Spacer()
+            
         }
-        .navigationBarHidden(true)
+        
+        .navigationBarHidden(true)        
     }
 }
 

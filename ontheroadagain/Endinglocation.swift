@@ -10,10 +10,19 @@ import SwiftUI
 struct Endinglocation: View {
     var body: some View {
         VStack {
-            Image("Car")
+            Image("Carbackwards")
                 .resizable()
                 .aspectRatio (contentMode: .fit)
+                .padding()
             Spacer()
+            
+            //bottom row buttons
+            HStack(alignment: .center, spacing: -20.0) {
+            Image("Backarrow")
+            Image("Homebutton")
+            Image("Forwardarrow")
+
+            }
         }
         .navigationBarHidden(true)
     }

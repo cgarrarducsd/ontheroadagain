@@ -13,7 +13,16 @@ struct Otherstartinglocation: View {
             Image("Car")
                 .resizable()
                 .aspectRatio (contentMode: .fit)
+                .padding()
             Spacer()
+            
+            //bottom row buttons
+            HStack(alignment: .center, spacing: -20.0) {
+            Image("Backarrow")
+            Image("Homebutton")
+            Image("Forwardarrow")
+
+            }
         }
         .navigationBarHidden(true)
     }
