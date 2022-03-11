@@ -27,8 +27,6 @@ struct ContentView: View {
             //add our aditonal views here
             NavigationLink(destination: Startinglocation())
             {Text("Getting Started")}
-            NavigationLink(destination: Login())
-            {Text("Login")}
                 
             }
             //bottom row buttons
